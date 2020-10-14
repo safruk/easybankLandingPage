@@ -1,0 +1,239 @@
+/////////////////////////
+/////MOCKUP - IMAGE
+.mockup {
+  // border: 1px solid red;
+  width: 100%;
+  position: absolute;
+  top: 19rem;
+  right: 0;
+  z-index: 100;
+  transform: translate(0%, -50%);
+
+  @include respond(phone-lg) {
+    top: 23rem;
+  }
+  @include respond(tab-port) {
+    width: 59%;
+    top: 33rem;
+    right: 14.5%;
+    transform: translate(50%, -50%);
+  }
+  @include respond(tab-land) {
+    top: 41rem;
+  }
+  @include respond(small-desktop) {
+    top: 41.5rem;
+  }
+
+  &__img {
+    width: 100%;
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+  }
+}
+
+//////////////////////////////////
+////////FEATURE - SECTION
+.feature {
+  background-color: var(--color-neutral-2);
+  padding: 7rem 3rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    padding: 10rem 0 7rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & > :not(:last-child) {
+      margin-bottom: 7rem;
+    }
+  }
+  &__header {
+    max-width: 65rem;
+    text-align: center;
+    align-self: center;
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tab-land) {
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    &__heading {
+      color: var(--color-primary-1);
+    }
+    &__para {
+      color: var(--color-neutral-1);
+    }
+  }
+  &__card-container {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    & > * {
+      padding-bottom: 3.5rem;
+    }
+    @include respond(tab-port) {
+      & > * {
+        padding-right: 2rem;
+      }
+    }
+    @include respond(small-desktop) {
+      & > * {
+        padding-right: 3.96rem;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 34rem;
+    & > :not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    @include respond(tab-port) {
+      // max-width: 34rem;
+      & > :not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include respond(tab-land) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      max-width: 26rem;
+    }
+
+    @include respond(small-desktop) {
+      max-width: 28.5rem;
+    }
+    &__heading {
+      color: var(--color-primary-1);
+    }
+
+    &__text {
+      color: var(--color-neutral-1);
+    }
+  }
+}
+
+////////////////////
+/////ARTICLE - SECTION
+
+.article {
+  padding: 7.5rem 3rem;
+  background-color: var(--color-neutral-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & > :not(:last-child) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__header {
+    &__heading {
+      text-align: center;
+      color: var(--color-primary-1);
+
+      @include respond(tab-land) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // gap: 2rem;
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tab-port) {
+      & > :not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    @include respond(tab-land) {
+      & > :not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    @include respond(small-desktop) {
+      & > :not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  &__card {
+    background-color: var(--color-neutral-4);
+    max-width: 36rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    @include respond(tab-port) {
+      max-width: 30rem;
+    }
+    @include respond(tab-land) {
+      max-width: 25.6rem;
+    }
+
+    &__img-container {
+      width: 100%;
+      height: 50%;
+      flex: 0 0 50%;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text-container {
+      color: var(--color-neutral-1);
+      padding: 2.5rem;
+      & > * {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__heading {
+      color: var(--color-primary-1);
+    }
+
+    &__author {
+    }
+
+    &__desc {
+    }
+  }
+}

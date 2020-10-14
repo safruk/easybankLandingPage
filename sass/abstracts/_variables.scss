@@ -1,0 +1,26 @@
+/*
+## Colors
+
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%)
+*/
+:root {
+  --color-primary-1: hsl(233, 26%, 24%);
+  --color-primary-2: hsl(136, 65%, 51%);
+  --color-primary-3: hsl(192, 70%, 51%);
+
+  --color-neutral-1: hsl(233, 8%, 62%);
+  --color-neutral-2: hsl(220, 16%, 96%);
+  --color-neutral-3: hsl(0, 0%, 98%);
+  --color-neutral-4: hsl(0, 0%, 100%);
+}
