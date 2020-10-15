@@ -417,6 +417,11 @@ body {
       @media only screen and (min-width: 37.5em) {
         .footer__social__icons > :not(:last-child) {
           margin-right: 1.5rem; } }
+    .footer__social__icon-logo {
+      height: 3rem;
+      width: 3rem; }
+      .footer__social__icon-logo:active, .footer__social__icon-logo:hover {
+        filter: sepia() saturate(10000%) hue-rotate(65deg); }
   .footer__logo {
     filter: hue-rotate(180deg) invert(1) brightness(5); }
   .footer__menu {
@@ -445,6 +450,8 @@ body {
   .footer__link {
     color: var(--color-neutral-4);
     text-decoration: none; }
+    .footer__link:active, .footer__link:hover {
+      color: var(--color-primary-2); }
   .footer__invite {
     display: flex;
     flex-direction: column;
@@ -622,4 +629,7 @@ body {
       .article__card__text-container > * {
         margin-bottom: 1rem; }
     .article__card__heading {
-      color: var(--color-primary-1); }
+      color: var(--color-primary-1);
+      cursor: pointer; }
+      .article__card__heading:hover, .article__card__heading:active {
+        color: var(--color-primary-2); }

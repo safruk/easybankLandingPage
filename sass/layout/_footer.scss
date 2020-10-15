@@ -56,6 +56,17 @@
         }
       }
     }
+    &__icon-logo {
+      height: 3rem;
+      width: 3rem;
+      // fill: var(--color-neutral-4);
+
+      &:active,
+      &:hover {
+        filter: sepia() saturate(10000%) hue-rotate(65deg); // I guess this is genius.How to convert white to any given color. For black to any color just shove in invert(1) before sepia() because the hack is to convert any color to white and then get any color you want .Looks like i am back in school learning about rainbows and white light to all colors of the spectrum. Next time use svg and fill though!!
+        // filter: invert(1);
+      }
+    }
   }
 
   &__logo {
@@ -93,6 +104,11 @@
   &__link {
     color: var(--color-neutral-4);
     text-decoration: none;
+
+    &:active,
+    &:hover {
+      color: var(--color-primary-2);
+    }
   }
 
   &__invite {
